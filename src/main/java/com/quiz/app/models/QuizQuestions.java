@@ -27,7 +27,7 @@ public class QuizQuestions {
 //	Quiz Questions Type i.e whether Objective or Subjective
 	@Column(name = "QUIZ_TYPE_ID")
 	@NotNull
-	private Long quizTypeId;
+	private Integer quizTypeId;
 
 	@NotNull
 	@Column(name = "QUESTION_TEXT")
@@ -53,14 +53,14 @@ public class QuizQuestions {
 	/**
 	 * @return the quizTypeId
 	 */
-	public Long getQuizTypeId() {
+	public Integer getQuizTypeId() {
 		return quizTypeId;
 	}
 
 	/**
 	 * @param quizTypeId the quizTypeId to set
 	 */
-	public void setQuizTypeId(Long quizTypeId) {
+	public void setQuizTypeId(Integer quizTypeId) {
 		this.quizTypeId = quizTypeId;
 	}
 
@@ -98,7 +98,7 @@ public class QuizQuestions {
 	 * @param questionText
 	 * @param quizId
 	 */
-	public QuizQuestions(Long quizQuestionId, @NotNull Long quizTypeId, String questionText, Long quizId) {
+	public QuizQuestions(Long quizQuestionId, @NotNull Integer quizTypeId, String questionText, Long quizId) {
 		super();
 		this.quizQuestionId = quizQuestionId;
 		this.quizTypeId = quizTypeId;
